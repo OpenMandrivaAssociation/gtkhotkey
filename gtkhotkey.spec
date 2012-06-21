@@ -12,6 +12,7 @@ Group:		System/Libraries
 Url:		http://launchpad.net/gtkhotkey/
 Source:		%{name}-%{version}.tar.bz2
 Patch0:		gtkhotkey-glib-2.31.patch
+Patch1:		gtkhotkey-0.2.1-linkage.patch
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gtk+-2.0)
@@ -44,8 +45,10 @@ require these.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
+autoreconf -fi
 %configure2_5x --disable-static
 %make
 
