@@ -13,6 +13,7 @@ Url:		http://launchpad.net/gtkhotkey/
 Source:		%{name}-%{version}.tar.bz2
 Patch0:		gtkhotkey-glib-2.31.patch
 Patch1:		gtkhotkey-0.2.1-linkage.patch
+BuildRequires:	gtk-doc
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gtk+-2.0)
