@@ -1,0 +1,12 @@
+diff -urN gtkhotkey-0.2.1/configure.ac gtkhotkey-0.2.1-patched/configure.ac
+--- gtkhotkey-0.2.1/configure.ac	2009-09-03 22:52:49.000000000 +0200
++++ gtkhotkey-0.2.1-patched/configure.ac	2012-06-21 16:22:46.411025352 +0200
+@@ -45,7 +45,7 @@
+ AM_PROG_LIBTOOL
+ 
+ 
+-PKG_CHECK_MODULES(GTK_HOTKEY, [glib-2.0 >= 2.15.6 gobject-2.0 >= 2.15.6 gio-2.0 >= 2.15.6 gio-unix-2.0 >= 2.15.6 gtk+-2.0 >= 2.12])
++PKG_CHECK_MODULES(GTK_HOTKEY, [glib-2.0 >= 2.15.6 gobject-2.0 >= 2.15.6 gio-2.0 >= 2.15.6 gio-unix-2.0 >= 2.15.6 gtk+-2.0 >= 2.12 x11])
+ AC_SUBST(GTK_HOTKEY_CFLAGS)
+ AC_SUBST(GTK_HOTKEY_LIBS)
+ 
