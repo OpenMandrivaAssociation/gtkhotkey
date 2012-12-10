@@ -10,7 +10,7 @@ Summary:	Platform Independent Hotkey Handling for GTK+ Applications
 License:	LGPLv3+
 Group:		System/Libraries
 Url:		http://launchpad.net/gtkhotkey/
-Source:		%{name}-%{version}.tar.bz2
+Source0:		%{name}-%{version}.tar.bz2
 Patch0:		gtkhotkey-glib-2.31.patch
 Patch1:		gtkhotkey-0.2.1-linkage.patch
 BuildRequires:	gtk-doc
@@ -55,7 +55,7 @@ autoreconf -fi
 
 %install
 %makeinstall_std
-%__rm -rf %{buildroot}%{_prefix}/doc
+rm -rf %{buildroot}%{_prefix}/doc
 
 %files -n %{libname}
 %doc AUTHORS COPYING NEWS README
@@ -66,4 +66,11 @@ autoreconf -fi
 %{_includedir}/gtkhotkey-1.0/
 %{_libdir}/libgtkhotkey.so
 %{_libdir}/pkgconfig/*.pc
+
+%changelog
+* Thu Jun 21 2012 Andrey Bondrov <abondrov@mandriva.org> 0.2.1-1
++ Revision: 806640
+- Update BuildRequires
+- Add patch1 to fix linkage
+- imported package gtkhotkey
 
