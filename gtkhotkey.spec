@@ -5,7 +5,7 @@
 
 Name:		gtkhotkey
 Version:	0.2.1
-Release:	1
+Release:	2
 Summary:	Platform Independent Hotkey Handling for GTK+ Applications
 License:	LGPLv3+
 Group:		System/Libraries
@@ -66,11 +66,3 @@ rm -rf %{buildroot}%{_prefix}/doc
 %{_includedir}/gtkhotkey-1.0/
 %{_libdir}/libgtkhotkey.so
 %{_libdir}/pkgconfig/*.pc
-
-%changelog
-* Thu Jun 21 2012 Andrey Bondrov <abondrov@mandriva.org> 0.2.1-1
-+ Revision: 806640
-- Update BuildRequires
-- Add patch1 to fix linkage
-- imported package gtkhotkey
-
