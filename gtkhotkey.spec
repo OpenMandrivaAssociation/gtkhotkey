@@ -5,7 +5,7 @@
 
 Name:		gtkhotkey
 Version:	0.2.1
-Release:	2
+Release:	3
 Summary:	Platform Independent Hotkey Handling for GTK+ Applications
 License:	LGPLv3+
 Group:		System/Libraries
