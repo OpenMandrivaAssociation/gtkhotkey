@@ -9,7 +9,7 @@ Release:	3
 Summary:	Platform Independent Hotkey Handling for GTK+ Applications
 License:	LGPLv3+
 Group:		System/Libraries
-Url:		http://launchpad.net/gtkhotkey/
+Url:		https://launchpad.net/gtkhotkey/
 Source0:		%{name}-%{version}.tar.bz2
 Patch0:		gtkhotkey-glib-2.31.patch
 Patch1:		gtkhotkey-0.2.1-linkage.patch
